@@ -1,6 +1,7 @@
 #!/bin/bash
 # Helpful Bash Aliases for projects
 alias cdjm="source /home/pedro/Aliases/Scripts/cdjm.sh"
+alias cdjmold="source /home/pedro/Aliases/Scripts/cdjmold.sh"
 alias cdolist="source /home/pedro/Aliases/Scripts/cdolist.sh"
 alias cdlb="source /home/pedro/Aliases/Scripts/cdlb.sh"
 alias cdmozilla="source /home/pedro/Aliases/Scripts/cdmozilla.sh"
@@ -30,3 +31,5 @@ alias startdjango="python manage.py runserver 0.0.0.0:8000"
 alias rdbt="rails db:migrate db:test:prepare"
 alias ber="bundle exec rspec"
 alias rgm="rails g model"
+alias rcs="rails c --sandbox"
+alias rnt="rake note"
