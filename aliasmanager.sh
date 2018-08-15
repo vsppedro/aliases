@@ -36,5 +36,5 @@ alias rcs="rails c --sandbox"
 alias rnt="rake notes"
 
 # Helpful Bash Aliases for Git
-alias gpsom="git push origin master"
-alias gplom="git pull origin master"
+alias gpusom="git push origin master"
+alias gpulom="git pull origin master"
