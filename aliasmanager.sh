@@ -2,10 +2,11 @@
 # Helpful Bash Aliases for projects
 alias cdjm="source /home/pedro/Aliases/Scripts/cdjm.sh"
 alias cdjmold="source /home/pedro/Aliases/Scripts/cdjmold.sh"
-alias cdolist="source /home/pedro/Aliases/Scripts/cdolist.sh"
 alias cdlb="source /home/pedro/Aliases/Scripts/cdlb.sh"
 alias cdmozilla="source /home/pedro/Aliases/Scripts/cdmozilla.sh"
 alias cdpt="source /home/pedro/Aliases/Scripts/cdpt.sh"
+alias cdolist="source /home/pedro/Aliases/Scripts/cdolist.sh"
+alias cdsi="source /home/pedro/Aliases/Scripts/cdsi.sh"
 
 # Helpful Bash Aliases for Virtual Environment
 alias startenv="source .env/bin/activate"
@@ -32,4 +33,8 @@ alias rdbt="rails db:migrate db:test:prepare"
 alias ber="bundle exec rspec"
 alias rgm="rails g model"
 alias rcs="rails c --sandbox"
-alias rnt="rake note"
+alias rnt="rake notes"
+
+# Helpful Bash Aliases for Git
+alias gpsom="git push origin master"
+alias gplom="git pull origin master"
