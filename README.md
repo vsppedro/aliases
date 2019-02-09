@@ -12,3 +12,13 @@ Just saving some alias and tips to make my workflow more productive
 | CTRL + y | Restore the last thing deleted by another shortcut |
 | CTRL + l | Clear the screen                                   |
 | CTRL + r | Search the command history                         |
+
+# Some tricks in the terminal
+| Command | Description                                |
+|---------|--------------------------------------------|
+| cd -    | Go back to the last directory you where in |
+
+# Useful tools
+| Name                                          | Description                                |
+|-----------------------------------------------|--------------------------------------------|
+| [Autojump](https://github.com/wting/autojump) | A faster way to navigate your filesystem   |
