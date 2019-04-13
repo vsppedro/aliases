@@ -6,6 +6,7 @@ alias gic='git checkout'
 alias gil='git log --pretty=format:"%C(auto)%h - %an, %ar %n %s %n"'
 alias gir='git reset'
 alias gis='git status -sb'
+alias gim='git commit'
 
 # Helpful Bash Aliases for Rails
 alias rs='rails s'
