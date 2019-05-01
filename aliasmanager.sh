@@ -13,6 +13,10 @@ alias rs='rails s'
 alias rc='rails c'
 alias rdb='rails db:drop db:create db:migrate'
 
+# Helpful Bash Aliases for Docker
+alias dc="docker-compose"
+alias dc_chown="sudo chown -R $USER:$USER ."
+
 # Helpful Functions for Rails
 function econtroller() {
   rails g controller $@ --skip-assets --no-helper
@@ -21,4 +25,8 @@ function econtroller() {
 # Helpful Functions
 function mkcdir () {
   mkdir -p -- "$1" && cd -P -- "$1"
+}
+
+function codir () {
+  cd -P -- "$1" && code .
 }
