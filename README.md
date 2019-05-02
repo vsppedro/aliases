@@ -1,5 +1,5 @@
 # Aliases
-Just saving some alias and tips to make my workflow more productive
+Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasmanager.sh) and tips to make my workflow more productive
 
 # Shortcuts for the terminal
 | Shortcut | Description                                        |
@@ -22,3 +22,4 @@ Just saving some alias and tips to make my workflow more productive
 | Name                                          | Description                                |
 |-----------------------------------------------|--------------------------------------------|
 | [Autojump](https://github.com/wting/autojump) | A faster way to navigate your filesystem   |
+
