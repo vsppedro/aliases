@@ -17,6 +17,7 @@ Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasma
 | Command | Description                                |
 |---------|--------------------------------------------|
 | cd -    | Go back to the last directory you where in |
+| cd      | Go back to home directory                  |
 
 # Useful tools
 | Name                                          | Description                                |
