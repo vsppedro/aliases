@@ -24,3 +24,7 @@ Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasma
 |-----------------------------------------------|--------------------------------------------|
 | [Autojump](https://github.com/wting/autojump) | A faster way to navigate your filesystem   |
 
+# Some tricks in the vscode
+| Shortcut | Description         |
+|----------|---------------------|
+| CTRL + l | Select current line |
