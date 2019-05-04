@@ -20,6 +20,7 @@ Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasma
 |---------|--------------------------------------------|
 | cd -    | Go back to the last directory you where in |
 | cd      | Go back to home directory                  |
+| sudo !! | Runs the previous command as sudo          |
 
 # Useful tools
 | Name                                          | Description                                |
