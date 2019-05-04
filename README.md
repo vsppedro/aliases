@@ -12,6 +12,8 @@ Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasma
 | CTRL + y | Restore the last thing deleted by another shortcut |
 | CTRL + l | Clear the screen                                   |
 | CTRL + r | Search the command history                         |
+| ALT + F  | Jump forward to next space                         |
+| ALT + B  | Skip back to previous space                        |
 
 # Some tricks in the terminal
 | Command | Description                                |
