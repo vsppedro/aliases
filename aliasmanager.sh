@@ -22,7 +22,7 @@ alias dc_chown="sudo chown -R $USER:$USER ."
 
 # Helpful Functions for Rails
 function econtroller() {
-  rails g controller $@ --skip-assets --no-helper
+  rails g controller $@ --skip-assets --skip-template-engine
 }
 
 # Helpful Functions
