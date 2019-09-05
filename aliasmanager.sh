@@ -23,7 +23,7 @@ alias jekyll_s="jekyll serve --livereload"
 alias dc="docker-compose"
 alias dc_chown="sudo chown -R $USER:$USER ."
 
-# Helpful Functions for Rails
+# Helpful Functions for Rails tutorials
 function econtroller() {
   rails g controller $@ --skip-assets --skip-template-engine
 }
