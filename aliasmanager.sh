@@ -13,6 +13,9 @@ alias rs='rails s'
 alias rc='rails c'
 alias rdb='rails db:drop db:create db:migrate'
 
+# Helpful Bash Aliases for Angular
+alias ng_s='ng serve --open'
+
 # Helpful Bash Aliases for Jekyll
 alias jekyll_s="jekyll serve --livereload"
 
