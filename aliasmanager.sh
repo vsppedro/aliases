@@ -37,3 +37,7 @@ function mkcdir () {
 function codir () {
   cd -P -- "$1" && code .
 }
+
+# function railsnew() {
+#   rails new "$1" --webpack="$2" --skip-turbolinks --skip-spring -T -d postgresql
+# }
