@@ -38,6 +38,10 @@ function codir () {
   cd -P -- "$1" && code .
 }
 
+function dcbash () {
+  docker-compose exec "$1" bash
+}
+
 # function railsnew() {
 #   rails new "$1" --webpack="$2" --skip-turbolinks --skip-spring -T -d postgresql
 # }
