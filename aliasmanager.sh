@@ -50,3 +50,8 @@ function dcbash () {
 function newrails() {
   rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
 }
+
+# Alias for "history | grep <word>"
+function greph () {
+  history | grep "$1"
+}
