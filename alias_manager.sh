@@ -55,3 +55,9 @@ function newrails() {
 function greph () {
   history | grep "$1"
 }
+
+# Run all shell scripts in secret folder
+for f in $(dirname "$0")/secret/*.sh
+do 
+  source "$f" -H || break 
+done

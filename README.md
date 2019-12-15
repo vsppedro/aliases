@@ -1,7 +1,18 @@
-# Aliases
+# About
 Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasmanager.sh) and tips to make my workflow more productive
 
-# Shortcuts for the terminal
+# Setup
+
+Add to .bashrc or .zshrc at the end of the file:
+
+```
+# Aliases
+source /path/to/aliases/aliasmanager.sh
+```
+
+# Tips
+
+## Shortcuts for the terminal
 | Shortcut       | Description                                         |
 |----------------|-----------------------------------------------------|
 | CTRL + a       | Move the cursor to the start of the line            |
@@ -16,19 +27,24 @@ Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasma
 | ALT + b        | Skip back to previous space                         |
 | SHIFT + INSERT | Paste from the clipboard (Same as CTRL + SHIFT + v) |
 
-# Some tricks in the terminal
+## Some tricks in the terminal
 | Command | Description                                |
 |---------|--------------------------------------------|
 | cd -    | Go back to the last directory you where in |
 | cd      | Go back to home directory                  |
 | sudo !! | Runs the previous command as sudo          |
 
-# Useful tools
+## Useful tools
 | Name                                          | Description                                |
 |-----------------------------------------------|--------------------------------------------|
 | [Autojump](https://github.com/wting/autojump) | A faster way to navigate your filesystem   |
 
-# Some tricks in the vscode
+## Some tricks in the vscode
 | Shortcut | Description         |
 |----------|---------------------|
 | CTRL + l | Select current line |
+
+## Postgres SQL Tips
+| Command | Description              |
+|---------|--------------------------|
+| \x on   | Turn on expanded display |
