@@ -9,25 +9,9 @@ alias gis='git status -sb'
 alias gim='git commit'
 alias gam='git commit --amend'
 
-# Helpful Bash Aliases for Rails
-alias rs='rails s'
-alias rc='rails c'
-alias rdb='rails db:drop db:create db:migrate'
-
-# Helpful Bash Aliases for Angular
-alias ng_s='ng serve --open'
-
-# Helpful Bash Aliases for Jekyll
-alias jekyll_s="jekyll serve --livereload"
-
 # Helpful Bash Aliases for Docker
 alias dc="docker-compose"
 alias dc_chown="sudo chown -R $USER:$USER ."
-
-# Helpful Functions for Rails tutorials
-function econtroller() {
-  rails g controller $@ --skip-assets --skip-template-engine
-}
 
 # Helpful Functions
 
@@ -46,14 +30,16 @@ function dcbash () {
   docker-compose exec "$1" bash
 }
 
-# Create a rails project without turbolinks, spring, minitest and using postgresql
-function newrails() {
-  rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
-}
-
 # Alias for "history | grep <word>"
 function greph () {
   history | grep "$1"
+}
+
+# Helpful Functions for Rails
+
+# Create a rails project without turbolinks, spring, minitest and using postgresql
+function newrails() {
+  rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
 }
 
 # Run all shell scripts in secret folder
