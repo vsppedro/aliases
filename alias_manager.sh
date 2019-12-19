@@ -12,6 +12,7 @@ alias gam='git commit --amend'
 # Helpful Bash Aliases for Docker
 alias dc="docker-compose"
 alias dc_chown="sudo chown -R $USER:$USER ."
+alias dc_restart="docker-compose down && docker-compose up"
 
 # Helpful Functions
 
