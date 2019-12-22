@@ -4,15 +4,16 @@
 alias gas='git add .'
 alias gic='git checkout'
 alias gil='git log --pretty=format:"%C(auto)%h - %an, %ar %n %s %n"'
-alias gir='git reset'
-alias gis='git status -sb'
 alias gim='git commit'
 alias gam='git commit --amend'
+alias gir='git reset'
+alias gis='git status -sb'
+alias gsl='git stash list'
 
 # Helpful Bash Aliases for Docker
-alias dc="docker-compose"
+alias dc='docker-compose'
 alias dc_chown="sudo chown -R $USER:$USER ."
-alias dc_restart="docker-compose down && docker-compose up"
+alias dc_restart='docker-compose down && docker-compose up'
 
 # Helpful Functions
 
@@ -34,6 +35,11 @@ function dcbash () {
 # Alias for "history | grep <word>"
 function greph () {
   history | grep "$1"
+}
+
+# List most used commands
+function history_most_used() {
+  history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr
 }
 
 # Helpful Functions for Rails
