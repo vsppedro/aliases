@@ -7,6 +7,7 @@ alias gil='git log --pretty=format:"%C(auto)%h - %an, %ar %n %s %n"'
 alias gim='git commit'
 alias gam='git commit --amend'
 alias gir='git reset'
+alias gip='git pull'
 alias gis='git status -sb'
 alias gsl='git stash list'
 
