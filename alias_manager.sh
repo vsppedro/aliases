@@ -50,6 +50,11 @@ function newrails() {
   rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
 }
 
+# Helpful Functions for Docker Compose with Rails
+function dcdebug() {
+  docker-compose up -d && docker attach $(docker-compose ps -q $1)
+}
+
 # Run all shell scripts in secret folder
 for f in $(dirname "$0")/secret/*.sh
 do 
