@@ -7,7 +7,7 @@ Add to .bashrc or .zshrc at the end of the file:
 
 ```
 # Aliases
-source /path/to/aliases/aliasmanager.sh
+source /path/to/aliases/alias_manager.sh
 ```
 
 # Tips
