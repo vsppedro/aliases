@@ -43,6 +43,16 @@ function history_most_used() {
   history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr
 }
 
+# List the last commands used
+function thistory(){
+  if [ "$#" -eq  "0" ]
+   then
+    history | tail -n 20
+  else
+    history | tail -n "$1"
+  fi
+}
+
 # Helpful Functions for Rails
 
 # Create a rails project without turbolinks, spring, minitest and using postgresql
@@ -50,10 +60,14 @@ function newrails() {
   rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
 }
 
-# Helpful Functions for Docker Compose with Rails
+# Helpful Functions for Docker Compose
+
+# Make dockercompose work with prybyebug gem
 function dcdebug() {
   docker-compose up -d && docker attach $(docker-compose ps -q $1)
 }
+
+# Configuration
 
 # Run all shell scripts in secret folder
 for f in $(dirname "$0")/secret/*.sh
