@@ -11,6 +11,13 @@ alias gip='git pull'
 alias gis='git status -sb'
 alias gsl='git stash list'
 
+# Helpful Functions for Git
+
+# Search commit by message
+function gilog() {
+  git log --all --grep="$1"
+}
+
 # Helpful Bash Aliases for Docker
 alias dc='docker-compose'
 alias dc_chown="sudo chown -R $USER:$USER ."
