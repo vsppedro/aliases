@@ -19,7 +19,8 @@ function gilog() {
 }
 
 # Helpful Bash Aliases for Docker
-alias dc='docker-compose'
+alias dc='GID=$(id -g) UID=$(id -u) docker-compose'
+alias dc_chown_build='dc_chown && dc build'
 alias dc_chown="sudo chown -R $USER:$USER ."
 alias dc_restart='docker-compose down && docker-compose up'
 
@@ -37,7 +38,7 @@ function codir () {
 
 # Enter bash of a docker compose service
 function dcbash () {
-  docker-compose exec "$1" bash
+  dc exec "$1" bash
 }
 
 # Alias for "history | grep <word>"
@@ -71,7 +72,7 @@ function newrails() {
 
 # Make dockercompose work with prybyebug gem
 function dcdebug() {
-  docker-compose up -d && docker attach $(docker-compose ps -q $1)
+  dc up -d && docker attach $(dc ps -q $1)
 }
 
 # Configuration
