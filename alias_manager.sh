@@ -3,6 +3,7 @@
 # Helpful Bash Aliases for Git
 alias gas='git add .'
 alias gic='git checkout'
+alias gib='git branch'
 alias gil='git log --pretty=format:"%C(auto)%h - %an, %ar %n %s %n"'
 alias gim='git commit'
 alias gam='git commit --amend'
