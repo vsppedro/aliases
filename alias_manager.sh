@@ -77,6 +77,11 @@ function dcdebug() {
   dc up -d && docker attach $(dc ps -q $1)
 }
 
+# Run bundle install in a docker-compose service
+function dcbundle() {
+  dc exec $1 bundle install
+}
+
 # Configuration
 
 # Run all shell scripts in secret folder
