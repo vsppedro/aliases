@@ -20,7 +20,7 @@ function gilog() {
 }
 
 # Helpful Bash Aliases for Docker
-alias dc='GID=$(id -g) UID=$(id -u) docker-compose'
+alias dc='docker-compose'
 alias dc_chown_build='user_chown && dc build'
 alias dc_restart='docker-compose down && docker-compose up'
 
