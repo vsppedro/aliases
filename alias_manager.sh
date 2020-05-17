@@ -80,7 +80,7 @@ function dcdebug() {
 
 # Run bundle install in a docker-compose service
 function dcbundle() {
-  dc run $1 bundle install
+  dc run --rm $1 bundle install
 }
 
 # Configuration
