@@ -83,6 +83,11 @@ function dcbundle() {
   dc run --rm $1 bundle install
 }
 
+# Run rails db:migrate in a docker-compose service
+function dcmigrate() {
+  dc run --rm $1 bundle exec rails db:migrate
+}
+
 # Configuration
 
 # Run all shell scripts in secret folder
