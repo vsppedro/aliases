@@ -97,4 +97,4 @@ do
 done
 
 # Config script alias
-source ~/tempo-livre/aliases/script/alias_manager.sh
+source ~/aliases/script/alias_manager.sh
