@@ -95,3 +95,6 @@ for f in $(dirname "$0")/secret/*.sh
 do 
   source "$f" -H || break 
 done
+
+# Config script alias
+source ~/tempo-livre/aliases/script/alias_manager.sh
