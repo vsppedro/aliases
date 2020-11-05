@@ -1,5 +1,5 @@
 # About
-Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/aliasmanager.sh) and tips to make my workflow more productive
+Just saving some [alias](https://github.com/VSPPedro/aliases/blob/master/alias_manager.sh) and tips to make my workflow more productive
 
 # Setup
 
