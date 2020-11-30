@@ -44,6 +44,11 @@ function dcbash () {
   dc exec "$1" bash
 }
 
+# Run command inside docker compose service
+function dcrun () {
+  dc run --rm "$@"
+}
+
 # Alias for "history | grep <word>"
 function greph () {
   history | grep "$1"
