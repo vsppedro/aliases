@@ -29,6 +29,11 @@ alias user_chown="sudo chown -R $USER:$USER ."
 
 # Helpful Functions
 
+# Open gem with vscode
+function b_open() {
+  EDITOR=code bundler open "$1"
+}
+
 # Create folder and change directory
 function mkcdir () {
   mkdir -p -- "$1" && cd -P -- "$1"
