@@ -88,6 +88,11 @@ function dcdebug() {
   dc up -d && docker attach $(dc ps -q $1)
 }
 
+# Get IpAddress from a docker-compose service
+function dcip() {
+  dc up -d && docker inspect $(dc ps -q $1) | grep \"IPAddress\"
+}
+
 # Run bundle install in a docker-compose service
 function dcbundle() {
   dc run --rm $1 bundle install
@@ -106,5 +111,5 @@ do
   source "$f" -H || break 
 done
 
-# Config script alias
+# Config alias for shell scripts
 source ~/aliases/script/alias_manager.sh
