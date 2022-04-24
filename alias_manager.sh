@@ -104,12 +104,19 @@ function dcmigrate() {
   dc run --rm $1 bundle exec rails db:migrate
 }
 
+# Helpful Functions for Overmind
+
+# Make Procfile work with prybyebug gem
+function overminddebug() {
+  overmind connect $1
+}
+
 # Configuration
 
 # Run all shell scripts in secret folder
 for f in $(dirname "$0")/secret/*.sh
-do 
-  source "$f" -H || break 
+do
+  source "$f" -H || break
 done
 
 # Config alias for shell scripts
