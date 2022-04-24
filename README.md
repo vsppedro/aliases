@@ -40,9 +40,10 @@ source /path/to/aliases/alias_manager.sh
 | [Autojump](https://github.com/wting/autojump) | A faster way to navigate your filesystem   |
 
 ## Some tricks in the vscode
-| Shortcut | Description         |
-|----------|---------------------|
-| CTRL + l | Select current line |
+| Shortcut         | Description         |
+|------------------|---------------------|
+| CTRL + l         | Select current line |
+| CTRL + SHIFT + k | Delete current line |
 
 ## Postgres SQL Tips
 | Command | Description              |
