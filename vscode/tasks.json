@@ -1,0 +1,35 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "launch tests for current file",
+      "type": "shell",
+      "command": "docker-compose exec app bundle exec rspec ${relativeFile}",
+      "problemMatcher": [],
+      "presentation": { "clear": true },
+    },
+    {
+      "label": "launch test for current line",
+      "type": "shell",
+      "command": "docker-compose exec app bundle exec rspec ${relativeFile}:${lineNumber}",
+      "problemMatcher": [],
+      "presentation": { "clear": true },
+    },
+    {
+      "label": "launch tests for current file (headless)",
+      "type": "shell",
+      "command": "HEADLESS=1 docker-compose exec app bundle exec rspec ${relativeFile}",
+      "problemMatcher": [],
+      "presentation": { "clear": true },
+    },
+    {
+      "label": "launch test for current line (headless)",
+      "type": "shell",
+      "command": "HEADLESS=1 docker-compose exec app bundle exec rspec ${relativeFile}:${lineNumber}",
+      "problemMatcher": [],
+      "presentation": { "clear": true },
+    },
+  ]
+}
