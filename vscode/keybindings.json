@@ -1,33 +1,33 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+alt+m",
+    "key": "Ctrl+meta+m",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "!terminalFocus"
   },
   {
-      "key": "ctrl+`",
-      "command": "-workbench.action.terminal.toggleTerminal",
-      "when": "!terminalFocus"
+    "key": "Ctrl+meta+b",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   },
   {
-    "key": "cmd+shift+l",
+    "key": "Ctrl+meta+f",
     "command": "workbench.action.tasks.runTask",
     "args": "launch tests for current file"
   },
   {
-    "key": "cmd+l",
+    "key": "Ctrl+meta+l",
     "command": "workbench.action.tasks.runTask",
     "args": "launch test for current line"
   },
   {
-    "key": "cmd+shift+h",
+    "key": "Ctrl+meta+a",
     "command": "workbench.action.tasks.runTask",
-    "args": "launch tests for current file (headless)"
+    "args": "launch all tests"
   },
   {
-    "key": "cmd+h",
+    "key": "Ctrl+meta+c",
     "command": "workbench.action.tasks.runTask",
-    "args": "launch test for current line (headless)"
+    "args": "launch console"
   },
 ]
