@@ -53,10 +53,6 @@ function dcbash () {
   dc exec "$1" bash
 }
 
-# Run command inside docker compose service
-function dcrun () {
-  dc run --rm "$@"
-}
 
 # Alias for "history | grep <word>"
 function greph () {
@@ -78,13 +74,6 @@ function thistory(){
   fi
 }
 
-# Helpful Functions for Rails
-
-# Create a rails project without turbolinks, spring, minitest and using postgresql
-function newrails() {
-  rails new "$1" --skip-turbolinks --skip-spring -T -d postgresql
-}
-
 # Helpful Functions for Docker Compose
 
 # Make dockercompose work with prybyebug gem
@@ -95,23 +84,6 @@ function dcdebug() {
 # Get IpAddress from a docker-compose service
 function dcip() {
   dc up -d && docker inspect $(dc ps -q $1) | grep \"IPAddress\"
-}
-
-# Run bundle install in a docker-compose service
-function dcbundle() {
-  dc run --rm $1 bundle install
-}
-
-# Run rails db:migrate in a docker-compose service
-function dcmigrate() {
-  dc run --rm $1 bundle exec rails db:migrate
-}
-
-# Helpful Functions for Overmind
-
-# Make Procfile work with prybyebug gem
-function overminddebug() {
-  overmind connect $1
 }
 
 # Configuration
