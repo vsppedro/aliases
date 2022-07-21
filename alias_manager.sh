@@ -25,6 +25,9 @@ alias dc_chown_build='user_chown && dc build'
 alias dc_restart='docker-compose down && docker-compose up'
 alias docker_prune_everything='docker system prune -a --volumes'
 
+# Helpful Bash Aliases for Github Client
+alias gh='/home/pedro/tempo-livre/gh-cli/bin/gh'
+
 # Helpfull Alias for system
 alias user_chown="sudo chown -R $USER:$USER ."
 
