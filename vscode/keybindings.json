@@ -30,4 +30,9 @@
     "command": "workbench.action.tasks.runTask",
     "args": "launch console"
   },
+  {
+    "key": "Ctrl+meta+r",
+    "command": "workbench.action.tasks.runTask",
+    "args": "launch rubocop"
+  },
 ]
