@@ -31,6 +31,16 @@
     "args": "launch console"
   },
   {
+    "key": "Ctrl+meta+s",
+    "command": "workbench.action.tasks.runTask",
+    "args": "launch all system tests"
+  },
+  {
+    "key": "Ctrl+meta+n",
+    "command": "workbench.action.tasks.runTask",
+    "args": "launch next failing test"
+  },
+  {
     "key": "Ctrl+meta+r",
     "command": "workbench.action.tasks.runTask",
     "args": "launch rubocop"
