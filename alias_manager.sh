@@ -12,6 +12,9 @@ alias gip='git pull'
 alias gis='git status -sb'
 alias gsl='git stash list'
 
+# Helpful Functions for VSCode
+alias code-i='code-insiders'
+
 # Helpful Functions for Git
 
 # Search commit by message
@@ -32,7 +35,7 @@ alias user_chown="sudo chown -R $USER:$USER ."
 
 # Open gem with vscode
 function b_open() {
-  EDITOR=code bundler open "$1"
+  EDITOR=code-insiders bundler open "$1"
 }
 
 # Create folder and change directory
@@ -42,7 +45,7 @@ function mkcdir () {
 
 # Change directory and open VSCode
 function codir () {
-  cd -P -- "$1" && code .
+  cd -P -- "$1" && code-insiders .
 }
 
 # Enter bash of a docker compose service
