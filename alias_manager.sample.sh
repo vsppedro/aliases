@@ -95,4 +95,4 @@ do
 done
 
 # Config alias for shell scripts
-source ~/aliases/script/alias_manager.sh
+source ~/Github/aliases/script/alias_manager.sh
