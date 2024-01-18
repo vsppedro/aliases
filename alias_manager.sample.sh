@@ -48,12 +48,6 @@ function codir () {
   cd -P -- "$1" && code-insiders .
 }
 
-# Enter bash of a docker compose service
-function dcbash () {
-  dc exec "$1" bash
-}
-
-
 # Alias for "history | grep <word>"
 function greph () {
   history | grep "$1"
@@ -84,6 +78,11 @@ function dcdebug() {
 # Get IpAddress from a docker-compose service
 function dcip() {
   dc up -d && docker inspect $(dc ps -q $1) | grep \"IPAddress\"
+}
+
+# Enter bash of a docker compose service
+function dcbash () {
+  dc exec "$1" bash
 }
 
 # Configuration
