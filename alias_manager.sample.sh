@@ -23,9 +23,9 @@ function gilog() {
 }
 
 # Helpful Bash Aliases for Docker
-alias dc='docker-compose'
+alias dc='dc'
 alias dc_chown_build='user_chown && dc build'
-alias dc_restart='docker-compose down && docker-compose up'
+alias dc_restart='dc down && dc up'
 alias docker_prune_everything='docker system prune -a --volumes'
 
 # Helpfull Alias for system
@@ -75,7 +75,7 @@ function dcdebug() {
   dc up -d && docker attach $(dc ps -q $1)
 }
 
-# Get IpAddress from a docker-compose service
+# Get IpAddress from a dc service
 function dcip() {
   dc up -d && docker inspect $(dc ps -q $1) | grep \"IPAddress\"
 }
