@@ -45,4 +45,9 @@
     "command": "workbench.action.tasks.runTask",
     "args": "launch rubocop"
   },
+  {
+    "key": "Ctrl+meta+o",
+    "command": "workbench.action.tasks.runTask",
+    "args": "launch only failing tests"
+  }
 ]
