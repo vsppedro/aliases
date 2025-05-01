@@ -2,7 +2,7 @@
 
 # Helpful Bash Aliases for Git
 alias gas='git add .'
-alias gic='git checkout'
+alias gic='git switch'
 alias gib='git branch'
 alias gil='git log --pretty=format:"%C(auto)%h - %an, %ar %n %s %n"'
 alias gim='git commit'
@@ -45,7 +45,7 @@ function mkcdir () {
 
 # Change directory and open VSCode
 function codir () {
-  cd -P -- "$1" && code-insiders .
+  cd -P -- "$1" && code .
 }
 
 # Alias for "history | grep <word>"
